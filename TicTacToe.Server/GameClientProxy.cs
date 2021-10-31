@@ -5,16 +5,14 @@ namespace TicTacToe.Server
 {
     public abstract partial class GameClientProxy : IDisposable
     {
-        protected GameClientProxy(IGame gameServer)
+        protected GameClientProxy(int clientId)
         {
-            GameServer = gameServer;
+            Id = clientId;
         }
         
         public abstract IGameCallback CallbackChannel { get; }
 
-        public int Id { get; protected set; }
-
-        protected IGame GameServer { get; }
+        public int Id { get; private set; }
 
         public abstract void Dispose();
     }

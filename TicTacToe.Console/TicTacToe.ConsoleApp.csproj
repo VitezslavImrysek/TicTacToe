@@ -6,8 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TicTacToe.Client.SignalR\TicTacToe.Client.SignalR.csproj" />
     <ProjectReference Include="..\TicTacToe.Client\TicTacToe.Client.csproj" />
     <ProjectReference Include="..\TicTacToe.Core\TicTacToe.Core.csproj" />
+    <ProjectReference Include="..\TicTacToe.Server.SignalR\TicTacToe.Server.SignalR.csproj" />
     <ProjectReference Include="..\TicTacToe.Server\TicTacToe.Server.csproj" />
   </ItemGroup>
 

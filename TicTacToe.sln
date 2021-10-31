@@ -3,17 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.Core", "TicTacToe.Core\TicTacToe.Core.csproj", "{E48BEE52-6AEB-4DB3-B6EB-7B604730436E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToe.Core", "TicTacToe.Core\TicTacToe.Core.csproj", "{E48BEE52-6AEB-4DB3-B6EB-7B604730436E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.Server", "TicTacToe.Server\TicTacToe.Server.csproj", "{2A1BAE60-2369-40CA-91CF-F5DE5DE4F7C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToe.Server", "TicTacToe.Server\TicTacToe.Server.csproj", "{2A1BAE60-2369-40CA-91CF-F5DE5DE4F7C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.Client", "TicTacToe.Client\TicTacToe.Client.csproj", "{6B68462E-5B6E-40EA-A672-8A5DCC1CE8E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToe.Client", "TicTacToe.Client\TicTacToe.Client.csproj", "{6B68462E-5B6E-40EA-A672-8A5DCC1CE8E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.Console", "TicTacToe.Console\TicTacToe.Console.csproj", "{F09ED53A-A46E-4BAF-B38B-25704CBA9839}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToe.ConsoleApp", "TicTacToe.Console\TicTacToe.ConsoleApp.csproj", "{F09ED53A-A46E-4BAF-B38B-25704CBA9839}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{9B7596D2-795F-4414-814F-BD9FD75A4BBC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9F6E34D0-E7AE-4AA3-B7A4-24418FDA2669}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalR", "SignalR", "{11BC2013-D9D6-4389-B5BE-5330D98D5CC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToe.Server.SignalR", "TicTacToe.Server.SignalR\TicTacToe.Server.SignalR.csproj", "{45DBD668-2E7B-4935-9146-22AD92637AC1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToe.Client.SignalR", "TicTacToe.Client.SignalR\TicTacToe.Client.SignalR.csproj", "{C8DD6401-4E08-4BCF-AD56-95063C2387A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +43,14 @@ Global
 		{F09ED53A-A46E-4BAF-B38B-25704CBA9839}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F09ED53A-A46E-4BAF-B38B-25704CBA9839}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F09ED53A-A46E-4BAF-B38B-25704CBA9839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45DBD668-2E7B-4935-9146-22AD92637AC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45DBD668-2E7B-4935-9146-22AD92637AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45DBD668-2E7B-4935-9146-22AD92637AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45DBD668-2E7B-4935-9146-22AD92637AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8DD6401-4E08-4BCF-AD56-95063C2387A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8DD6401-4E08-4BCF-AD56-95063C2387A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8DD6401-4E08-4BCF-AD56-95063C2387A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8DD6401-4E08-4BCF-AD56-95063C2387A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +60,9 @@ Global
 		{2A1BAE60-2369-40CA-91CF-F5DE5DE4F7C8} = {9F6E34D0-E7AE-4AA3-B7A4-24418FDA2669}
 		{6B68462E-5B6E-40EA-A672-8A5DCC1CE8E4} = {9F6E34D0-E7AE-4AA3-B7A4-24418FDA2669}
 		{F09ED53A-A46E-4BAF-B38B-25704CBA9839} = {9B7596D2-795F-4414-814F-BD9FD75A4BBC}
+		{11BC2013-D9D6-4389-B5BE-5330D98D5CC8} = {9F6E34D0-E7AE-4AA3-B7A4-24418FDA2669}
+		{45DBD668-2E7B-4935-9146-22AD92637AC1} = {11BC2013-D9D6-4389-B5BE-5330D98D5CC8}
+		{C8DD6401-4E08-4BCF-AD56-95063C2387A2} = {11BC2013-D9D6-4389-B5BE-5330D98D5CC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A69806CB-A1DB-4D31-8579-5E80277E021E}

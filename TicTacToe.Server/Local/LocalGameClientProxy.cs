@@ -4,11 +4,10 @@ namespace TicTacToe.Server.Local
 {
     public class LocalGameClientProxy : GameClientProxy
     {
-        public LocalGameClientProxy(IGame gameServer, IGameCallback gameClient, int id) 
-            : base(gameServer)
+        public LocalGameClientProxy(IGameCallback gameClient, int id) 
+            : base(id)
         {
             CallbackChannel = gameClient;
-            Id = id;
         }
 
         public override IGameCallback CallbackChannel { get; }
